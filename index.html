@@ -4,9 +4,9 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Kartik Manral — Aspiring APM</title>
-<meta name="description" content="Kartik — aspiring Associate Product Manager. Builder of buransh.ai, Minutes, PM Radar, ClipwellAI, Product Reps, MediBook and Curio AI. Product case studies on quick commerce, ride safety and fintech." />
+<meta name="description" content="Kartik — aspiring Associate Product Manager. Builder of buransh.ai, PM Radar, Product Reps, MediBook and Curio AI. Product case studies on quick commerce, ride safety and fintech." />
 <meta property="og:title" content="Kartik Manral — Aspiring APM" />
-<meta property="og:description" content="Product thinker who ships. buransh.ai · Minutes · PM Radar · ClipwellAI · Product Reps · MediBook · Curio AI." />
+<meta property="og:description" content="Product thinker who ships. buransh.ai · PM Radar · Product Reps · MediBook · Curio AI." />
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230b0d12'/><text x='16' y='22' font-family='monospace' font-size='16' text-anchor='middle' fill='%237CF2C8'>K_</text></svg>" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -116,6 +116,13 @@
   .c .k{font-family:var(--mono);font-size:12px;color:var(--muted)}
   .c .v{margin-top:4px;font-weight:500;word-break:break-word}
 
+  .cert{display:grid;grid-template-columns:1fr 1.1fr;gap:28px;align-items:center}
+  .cert img{width:100%;border-radius:12px;border:1px solid var(--line);display:block}
+  .cert .k{font-family:var(--mono);font-size:12px;color:var(--accent-2)}
+  .cert h3{font-size:24px;margin:8px 0 6px}
+  .cert p{color:var(--muted);font-size:15px}
+  .cert .id{font-family:var(--mono);font-size:12px;color:var(--muted);margin-top:14px}
+  @media(max-width:800px){.cert{grid-template-columns:1fr}}
   footer{padding:40px 0;border-top:1px solid var(--line);color:var(--muted);font-family:var(--mono);font-size:13px}
   footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
@@ -133,6 +140,7 @@
       <a href="#builds">Builds</a>
       <a href="#cases">Case studies</a>
       <a href="#experience">Experience</a>
+      <a href="#certificates">Certificates</a>
       <a href="#about">About</a>
     </div>
   </div>
@@ -155,7 +163,7 @@
         <div><b>$</b> whoami</div>
         <div>kartik manral — b.tech @ upes · ai pm fellow · indie builder</div>
         <div style="margin-top:8px"><b>$</b> ls ~/shipped</div>
-        <div><span class="k">buransh.ai</span>  <span class="k">minutes</span>  <span class="k">pm-radar</span>  <span class="k">clipwell-ai</span>  <span class="k">product-reps</span>  <span class="k">medibook</span>  <span class="k">curio-ai</span></div>
+        <div><span class="k">buransh.ai</span>  <span class="k">pm-radar</span>  <span class="k">product-reps</span>  <span class="k">medibook</span>  <span class="k">curio-ai</span></div>
         <div style="margin-top:8px"><b>$</b> cat focus.txt</div>
         <div>ai products · indian consumer tech · b2b saas</div>
       </div>
@@ -189,23 +197,6 @@
 
       <article class="build reveal">
         <div>
-          <span class="label g">NEW · AI PRODUCTIVITY · CHROME EXTENSION</span>
-          <h3>Minutes</h3>
-          <div class="line">"Never get caught off guard in a meeting again."</div>
-          <p>Everyone zones out in online meetings, and the worst moment is hearing your name followed by a question you didn't catch. Note-takers only help after the call. Minutes sits beside the meeting as it happens: it tells you what you were just asked, suggests a reply you can say out loud, and turns the whole call into action items when it ends.</p>
-          <div class="chips"><span class="chip">Chrome extension</span><span class="chip">Gemini API</span><span class="chip">Next.js</span><span class="chip">Vercel</span></div>
-          <a class="more" href="https://meeting-summarizer-eight.vercel.app" target="_blank" rel="noopener">See Minutes →</a>
-        </div>
-        <ul>
-          <li>Minutes Live, a Chrome side panel: live transcript of Meet, Zoom or Teams; when your name comes up and you're actually being asked something, it shows the question and a reply in your style (natural, short, Hinglish or formal)</li>
-          <li>"What was I asked?" and "What did I miss?" buttons for when you zone out, plus an ask box ("what deadline did we agree on?")</li>
-          <li>After the call: action items with owners and dates, decisions and open questions, with separate formats for standups, strategy meetings and user research</li>
-          <li>Runs entirely on free AI tiers with automatic fallbacks. Built to be visible to others in the meeting, not a hidden helper</li>
-        </ul>
-      </article>
-
-      <article class="build reveal">
-        <div>
           <span class="label y">JOB SEARCH · AI MATCHING</span>
           <h3>PM Radar</h3>
           <div class="line">"Every product role worth applying to, in one list."</div>
@@ -223,24 +214,7 @@
 
       <article class="build reveal">
         <div>
-          <span class="label p">CREATOR TOOLS · AI VIDEO · HACKATHON</span>
-          <h3>ClipwellAI</h3>
-          <div class="line">"Long videos in. On-brand Reels out."</div>
-          <p>Creators and podcast teams sit on hours of long-form video, then lose days hunting for the moments worth posting and rewriting captions in their own voice. Most clipping tools stop at the cut and never learn how you sound. ClipwellAI picks the moments worth posting, tells you why, and learns your brand voice from every edit and every result.</p>
-          <div class="chips"><span class="chip">Wispr Flow</span><span class="chip">Google sign-in</span><span class="chip">Brand memory</span><span class="chip">Vercel</span></div>
-          <a class="more" href="https://clipwellai.vercel.app" target="_blank" rel="noopener">Visit ClipwellAI →</a>
-        </div>
-        <ul>
-          <li>Paste a YouTube link or podcast, or drop a long video, and get clip picks with a reason and a score for each, not an unexplained cut</li>
-          <li>Speak your brief with Wispr Flow instead of typing prompts; export captioned 9:16 MP4s with copy per platform, plus a content calendar</li>
-          <li>A style card that learns: say "too salesy, drop the emojis" once, mark it as a rule, and every future clip follows it. Works in Hinglish, and improves from what performed</li>
-          <li>Privacy by design: footage stays on your laptop, only the audio is sent for transcription. Built with Rounak Bisht at the Product Space Hackathon, by voice</li>
-        </ul>
-      </article>
-
-      <article class="build reveal">
-        <div>
-          <span class="label b">EDTECH · COMMUNITY · BUILT IN 1 DAY</span>
+          <span class="label b">NEW · EDTECH · COMMUNITY · BUILT IN 1 DAY</span>
           <h3>Product Reps</h3>
           <div class="line">"Answer, time yourself, get feedback, learn from others."</div>
           <p>PM interns prepare for interviews alone, with no feedback and no idea what companies are really asking. Product Reps turns prep into a daily habit: practise a question against the clock, get AI feedback, and learn from questions and answers other aspirants share.</p>
@@ -377,6 +351,24 @@
           <div class="t">analytics &amp; growth</div>
           <div class="chips"><span class="chip">Amplitude</span><span class="chip">Klaviyo</span><span class="chip">Behavioural segmentation</span></div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="certificates">
+  <div class="wrap">
+    <div class="eyebrow">// 04 — certifications</div>
+    <h2>Credentials</h2>
+    <p class="sub">Programmes and events that shaped how I build and ship products.</p>
+    <div class="panel reveal cert">
+      <a href="certificate.jpg" target="_blank" rel="noopener"><img src="certificate.jpg" alt="Certificate of Participation, Agentic AI Hackathon 26, Product Space, issued to Kartik Manral on 3 November 2026" /></a>
+      <div>
+        <div class="k">PRODUCT SPACE · NOV 2026</div>
+        <h3>Agentic AI Hackathon '26</h3>
+        <p>Certificate of Participation for commitment during the Agentic AI Hackathon, run by Product Space. I built and shipped Minutes, an AI meeting assistant with a Chrome extension, as part of the hacking week.</p>
+        <div class="id">Certificate ID: PSCERT-E100181G167183</div>
+        <a class="more" href="certificate.jpg" target="_blank" rel="noopener">View full certificate →</a>
       </div>
     </div>
   </div>
